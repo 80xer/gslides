@@ -1,0 +1,23 @@
+{
+  "name": "fnslides",
+  "version": "1.0.0",
+  "description": "Much of the deck is customized by changing the settings in [`slide_config.js`](slide_config.js). Some of the customizations include the title, Analytics tracking ID, speaker information (name, social urls, blog), web fonts to load, themes, and other general behavior.",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-livereload": "^0.1.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@11.4.3.230:leetou/fnslides.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,187 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FnGuide Web</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<slide class="logoslide nobackground" style="background-color:black">
+  
+</slide>
+
+<slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/fnguide_logo.png"></span>
+  </article>
+</slide>
+
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/fnguide_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide  >
+  
+    <hgroup>
+      <h2>INDEX</h2>
+      <h3>목차</h3>
+    </hgroup>
+    <article class="selfLink"><p>웹개발의 변화</p>
+<ul>
+<li><a href="#5">초기</a></li>
+<li><a href="#7">활성기</a></li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>웹 개발의 변화</h2>
+      <h3>초기</h3>
+    </hgroup>
+    <article ><p>이미지를 최소화하고 텍스트 위주로 이루어진 정보전달 목적의 정적 웹페이지가 대부분.</p>
+<ul>
+<li><a href="https://web.archive.org/web/19971211142519/http://www.yahoo.co.kr/">1997년 야후코리아</a></li>
+<li><a href="https://web.archive.org/web/19990203171444/http://hanmail.net/Mail-bin/index.html">한메일</a></li>
+</ul>
+<p>주로 Perl 이나 C를 사용한 CGI를 통해 동적인 페이지를 제공.</p>
+<p>html코드가 서버측 언어(Perl, C)안에 혼합되어 있어 Perl, C등을 함께 알아야 했고 대부분의 정적인 페이지들은 파일을 사용해도 대부분의 정보를 감당할 수 있었기 때문에 DB를 적극적으로 사용하지 않음.</p>
+<p>상대적으로 CGI 가 돌아가는 웹서버의 역할이 매우 컸고, 클라이언트와 데이터베이스의 역할은 작았음.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>웹 개발의 변화</h2>
+      <h3>초기</h3>
+    </hgroup>
+    <article class="contentImg"><p><img alt="초기서버코드" src="images/a_src.png" />
+<img alt="초기구조" src="images/a_arc.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>웹 개발의 변화</h2>
+      <h3>활성기</h3>
+    </hgroup>
+    <article ><p>정적인 데이터와 텍스트뿐만 아니라 다양한 미디어들이 사용되며 사용자와 상호작용을 할 수 있게된다.
+ActiveX, 플래시 애니메이션이 유행하고 플래시 메뉴가 필수요소로 자리잡기도 했다.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Once more, with JavaScrip t</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="javascript">
+function isSmall() {
+  return window.matchMedia("(min-device-width: ???)").matches;
+}
+
+function hasTouch() {
+  return Modernizr.touch;
+}
+
+function detectFormFactor() {
+  var device = DESKTOP;
+  if (hasTouch()) {
+    device = isSmall() ? PHONE : TABLET;
+  }
+  return device;
+}
+</pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Centered content</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>This content should be centered!</p></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/fnguide_icon_128.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+    <p>Important contact information goes here.</p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+
+<slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/fnguide_logo.png"></span>
+  </article>
+</slide>
+
+<slide class="backdrop"></slide>
+
+<!--
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+-->
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
